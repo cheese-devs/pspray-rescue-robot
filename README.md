@@ -1,15 +1,15 @@
 # PSPray Rescue Robot
 
-This project uses:
-- ESP32 + micro-ROS
-- ROS2 (Humble)
-- Python Subscriber Node
+## Overview
+This project uses ESP32 + micro-ROS to send sensor data to ROS2.
+
+## System Architecture
+ESP32 → WiFi → micro-ROS → ROS2 → Python Node
 
 ## Features
-- Read sensor data from ESP32
-- Publish to ROS2 topic (/knob_value)
+- Publish sensor data (/knob_value)
 - Subscribe using Python node
 
-## Run
+## How to Run
 ```bash
 ros2 run my_py_pkg my_sub
